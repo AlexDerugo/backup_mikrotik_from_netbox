@@ -1,0 +1,7 @@
+scrapli[full]
+scrapli-community
+paramiko
+scp
+GitPython
+pynetbox
+google-cloud-storage
