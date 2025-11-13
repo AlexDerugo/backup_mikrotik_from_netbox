@@ -1,29 +1,94 @@
-.coveralls.yml
+# Cursor
+.cursorignore
+.cursor
+
+# Python
 *.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Testing & Coverage
+.coveralls.yml
 .coverage
-.tox
-.pytest_cache
-.ipynb_checkpoints
-.executed_notebooks
+.coverage.*
 coverage.xml
-__pycache__
+*.cover
+.hypothesis/
+.pytest_cache/
+.tox/
+.nox/
+junit.xml
+*sponge_log.xml
+
+# IDEs
+.vscode/
+.idea/
+.spyderproject
+.ropeproject
+.cursor/
+.cursorignore
+
+# Environment & Secrets
+.env
+.env.*
+.*env
+*.env
+env/
+venv/
+ENV/
+**/venv/
+**/ENV/
+
+# SSH Keys & Certificates
+*.pem
+*.key
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+.ssh/
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+
+# GCP Credentials
+*key*.json
+*credentials*.json
+credentials.dat
+secrets.tar
+
+# Logs
+*.log
+*.log.*
+logs/
+
+# OS Files
+.DS_Store
+.DS_store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project Specific
+*.backup
+*.xlsx
+*.sqlite3
 *db\.sqlite3
+.ipynb_checkpoints/
+.executed_notebooks/
 managed_vms/django_tutorial/static/*
 **/migrations/*
-lib
-secrets.tar
-.cache
-junit.xml
-credentials.dat
-.nox
-.vscode/
-*sponge_log.xml
-.DS_store
-env/
-.idea
-.env*
-**/venv
+lib/
+.cache/
 **/noxfile.py
-*.xlsx
-*.json
-*.backup
